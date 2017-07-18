@@ -1,0 +1,49 @@
+﻿@using Exercise.Models.ViewModels
+@using Exercise.Models.BusinessEntities
+@model ListViewModel
+
+<body>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="form-group">
+          <label class="control-label">Add a new task</label>
+          <div class="input-group">            
+            <input type="text" class="form-control" id="newTask" placeholder="Type here...">
+            <span class="input-group-btn">
+              <button class="btn btn-primary btn-lg btn-add" type="button" onclick="AddTask()">Add</button>
+            </span>     
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Add new task-->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <!--Display tasks - Pre-populate with default tasks-->
+        <form>
+          <ul id="taskList">
+            @foreach (Task t in Model.taskList)
+            {
+              <li class="list-group-item">
+                <input type="checkbox" class="isChecked" id="" />
+                <label> @t.Description</label>
+                <span class="btn btn-warning remove">remove</span>
+              </li>
+            }
+          </ul>
+        </form>
+      </div>
+    </div>
+      </div>
+
+
+</body>
+
+
+
+@section scripts{
+  <script src="~/Scripts/Site/List.js"></script>
+}

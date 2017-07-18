@@ -1,0 +1,15 @@
+﻿body {
+    background-color: #F5F5F5;
+}
+.isChecked:checked + label {
+    text-decoration: line-through;
+}
+.list-group-item {
+    border: 0;
+}
+.btn-add {
+    width: 150px;
+}
+.remove {
+    float: right;
+}
