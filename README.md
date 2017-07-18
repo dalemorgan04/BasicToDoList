@@ -14,4 +14,5 @@ A basic to do list built as a coding exercise
 * The task list is prepopulated with data using models and viewmodels
 * The bootstrap paper theme has been used to give it a modern look
 
-#Screenshot
+# Screenshot
+![alt text](https://raw.githubusercontent.com/dalemorgan04/ToDo/master/screenshot.png)
